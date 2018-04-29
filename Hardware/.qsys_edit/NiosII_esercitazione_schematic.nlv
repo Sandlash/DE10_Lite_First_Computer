@@ -1,0 +1,32 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst NiosII_esercitazione.proc -pg 1 -lvl 2 -y 620
+preplace inst NiosII_esercitazione.LEDs -pg 1 -lvl 3 -y 720
+preplace inst NiosII_esercitazione.HEX5_HEX4 -pg 1 -lvl 3 -y 540
+preplace inst NiosII_esercitazione.sysid_qsys_0 -pg 1 -lvl 3 -y 640
+preplace inst NiosII_esercitazione.watchdog -pg 1 -lvl 3 -y 40
+preplace inst NiosII_esercitazione.jtag_uart_0 -pg 1 -lvl 3 -y 140
+preplace inst NiosII_esercitazione.proc.cpu -pg 1
+preplace inst NiosII_esercitazione.HEX3_HEX0 -pg 1 -lvl 3 -y 340
+preplace inst NiosII_esercitazione.onchip_memory2_0 -pg 1 -lvl 3 -y 440
+preplace inst NiosII_esercitazione.timer_0 -pg 1 -lvl 3 -y 240
+preplace inst NiosII_esercitazione.clk_0 -pg 1 -lvl 1 -y 690
+preplace inst NiosII_esercitazione.sliders -pg 1 -lvl 3 -y 940
+preplace inst NiosII_esercitazione.push_button -pg 1 -lvl 3 -y 820
+preplace inst NiosII_esercitazione.proc.reset_bridge -pg 1
+preplace inst NiosII_esercitazione.proc.clock_bridge -pg 1
+preplace inst NiosII_esercitazione -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst NiosII_esercitazione.unipi_se_pwm_0 -pg 1 -lvl 1 -y 1010
+preplace netloc EXPORT<net_container>NiosII_esercitazione</net_container>(SLAVE)NiosII_esercitazione.sliders,(SLAVE)sliders.external_connection) 1 0 3 NJ 970 NJ 970 NJ
+preplace netloc EXPORT<net_container>NiosII_esercitazione</net_container>(SLAVE)NiosII_esercitazione.leds,(SLAVE)LEDs.external_connection) 1 0 3 NJ 760 NJ 760 NJ
+preplace netloc EXPORT<net_container>NiosII_esercitazione</net_container>(SLAVE)HEX5_HEX4.external_connection,(SLAVE)NiosII_esercitazione.hex5_hex4) 1 0 3 NJ 540 NJ 540 NJ
+preplace netloc FAN_OUT<net_container>NiosII_esercitazione</net_container>(SLAVE)jtag_uart_0.irq,(MASTER)proc.irq,(SLAVE)timer_0.irq,(SLAVE)push_button.irq) 1 2 1 800
+preplace netloc EXPORT<net_container>NiosII_esercitazione</net_container>(SLAVE)NiosII_esercitazione.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>NiosII_esercitazione</net_container>(SLAVE)NiosII_esercitazione.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>NiosII_esercitazione</net_container>(SLAVE)push_button.external_connection,(SLAVE)NiosII_esercitazione.push_button) 1 0 3 NJ 850 NJ 850 NJ
+preplace netloc EXPORT<net_container>NiosII_esercitazione</net_container>(SLAVE)NiosII_esercitazione.hex3_hex0,(SLAVE)HEX3_HEX0.external_connection) 1 0 3 NJ 370 NJ 370 NJ
+preplace netloc INTERCONNECT<net_container>NiosII_esercitazione</net_container>(SLAVE)watchdog.reset,(SLAVE)proc.reset,(SLAVE)onchip_memory2_0.reset1,(SLAVE)LEDs.reset,(SLAVE)HEX5_HEX4.reset,(SLAVE)push_button.reset,(SLAVE)sliders.reset,(SLAVE)HEX3_HEX0.reset,(SLAVE)timer_0.reset,(MASTER)clk_0.clk_reset,(MASTER)watchdog.resetrequest,(SLAVE)jtag_uart_0.reset,(SLAVE)sysid_qsys_0.reset,(MASTER)proc.debug_reset_request) 1 1 3 320 990 740 30 1020
+preplace netloc FAN_OUT<net_container>NiosII_esercitazione</net_container>(MASTER)clk_0.clk,(SLAVE)sliders.clk,(SLAVE)timer_0.clk,(SLAVE)watchdog.clk,(SLAVE)push_button.clk,(SLAVE)onchip_memory2_0.clk1,(SLAVE)sysid_qsys_0.clk,(SLAVE)HEX5_HEX4.clk,(SLAVE)HEX3_HEX0.clk,(SLAVE)proc.clk,(SLAVE)LEDs.clk,(SLAVE)jtag_uart_0.clk) 1 1 2 300 560 780
+preplace netloc INTERCONNECT<net_container>NiosII_esercitazione</net_container>(SLAVE)proc.debug_mem_slave,(SLAVE)watchdog.s1,(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)sliders.s1,(SLAVE)onchip_memory2_0.s1,(SLAVE)LEDs.s1,(SLAVE)HEX5_HEX4.s1,(MASTER)proc.data_master,(MASTER)proc.instruction_master,(SLAVE)timer_0.s1,(SLAVE)HEX3_HEX0.s1,(SLAVE)sysid_qsys_0.control_slave,(SLAVE)push_button.s1,(SLAVE)onchip_memory2_0.s2) 1 1 2 320 580 700
+levelinfo -pg 1 0 80 1060
+levelinfo -hier NiosII_esercitazione 90 130 460 870 1040

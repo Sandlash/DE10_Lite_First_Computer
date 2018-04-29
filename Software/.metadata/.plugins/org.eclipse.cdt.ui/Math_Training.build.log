@@ -1,0 +1,18 @@
+10:40:08 **** Incremental Build of configuration Nios II for project Math_Training ****
+make all 
+Info: Building C:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Software/Math_Training_bsp/
+C:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Software/Math_Training_bsp/
+[BSP build complete]
+Info: Compiling src/main.c to obj/default/src/main.o
+nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Software/Math_Training_bsp//HAL/inc -IC:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Software/Math_Training_bsp/ -IC:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Software/Math_Training_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/main.o src/main.c
+Info: Linking Math_Training.elf
+nios2-elf-g++  -T'C:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Software/Math_Training_bsp//linker.x' -msys-crt0='C:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Software/Math_Training_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Software/Math_Training_bsp/   -Wl,-Map=Math_Training.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o Math_Training.elf obj/default/src/1lnn.o obj/default/src/main.o obj/default/src/mnist-stats.o obj/default/src/mnist-utils.o obj/default/src/screen.o -lm -msys-lib=m
+nios2-elf-insert Math_Training.elf --thread_model hal --cpu_name proc --qsys true --simulation_enabled false --id 1 --sidp 0x41090 --timestamp 1524913700 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name NiosII_esercitazione --quartus_project_dir "c:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/SoPC" --sopcinfo C:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/SoPC/NiosII_esercitazione.sopcinfo
+Info: (Math_Training.elf) 83 KBytes program size (code + initialized data).
+Info:                     37 KBytes free for stack + heap.
+Info: Creating Math_Training.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Math_Training.elf >Math_Training.objdump
+[Math_Training build complete]
+
+10:40:16 Build Finished (took 8s.543ms)
+

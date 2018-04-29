@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 3 resources" deleteContents="false" description="Delete 3 resources" element1="/Math_Training/src/mnist-stats.h" element2="/Math_Training/src/mnist-utils.h" element3="/Math_Training/src/screen.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1524914752397"/>
+</session>
