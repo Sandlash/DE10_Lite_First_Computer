@@ -156,14 +156,11 @@ void testLayer(Layer *l){
 
 int main(int argc, const char * argv[]) {
 
+    // initialize all connection weights to random values between 0 and 1
     Layer outputLayer;
-    FILE *weightsFile;
-
-    weightsFile=fopen(MNIST_WEIGHTS_INIT_FILE_NAME, "rb");
-    initLayer(&outputLayer, weightsFile);
-    fclose(weightsFile);
+    initLayer(&outputLayer);
     
-    //testLayer(&outputLayer);
+    testLayer(&outputLayer);
 
     
     return 0;

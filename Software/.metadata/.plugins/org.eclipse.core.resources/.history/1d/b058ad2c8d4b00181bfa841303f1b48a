@@ -37,19 +37,13 @@ Vector getTargetOutput(int targetIndex){
  * The result (85% success rate) will not change significantly.
  */
 
-void initLayer(Layer *l, FILE *weightsFile){
-	int result=0;
+void initLayer(Layer *l){
     
     for (int o=0; o<NUMBER_OF_OUTPUT_CELLS; o++){
         
         for (int i=0; i<NUMBER_OF_INPUT_CELLS; i++){
             l->cell[o].input[i]=0;
-            result=fread(&l->cell[o].weight[i], sizeof(double), 1, weightsFile);
-
-            if (result!=1) {
-                    printf("\nError when reading WEIGHTS file! Abort!\n");
-                    exit(1);
-                }
+            l->cell[o].weight[i]=rand()/(double)(RAND_MAX);
         }
         
         l->cell[o].output = 0;

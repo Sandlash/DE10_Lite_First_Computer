@@ -73,7 +73,7 @@ Vector getTargetOutput(int targetIndex);
  * @param l A pointer to a NN layer
  */
 
-void initLayer(Layer *l, FILE *weightsFile);
+void initLayer(Layer *l);
 
 
 

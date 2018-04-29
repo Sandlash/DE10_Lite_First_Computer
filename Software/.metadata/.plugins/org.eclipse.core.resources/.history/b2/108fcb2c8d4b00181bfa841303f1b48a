@@ -155,16 +155,27 @@ void testLayer(Layer *l){
  */
 
 int main(int argc, const char * argv[]) {
-
-    Layer outputLayer;
-    FILE *weightsFile;
-
-    weightsFile=fopen(MNIST_WEIGHTS_INIT_FILE_NAME, "rb");
-    initLayer(&outputLayer, weightsFile);
-    fclose(weightsFile);
     
-    //testLayer(&outputLayer);
+    // remember the time in order to calculate processing time at the end
+    time_t startTime = time(NULL);
+    
+    // clear screen of terminal window
+    clearScreen();
+    printf("    MNIST-1LNN: a simple 1-layer neural network processing the MNIST handwriting images\n");
+    
+    // initialize all connection weights to random values between 0 and 1
+    Layer outputLayer;
+    initLayer(&outputLayer);
+    trainLayer(&outputLayer);
+    
+    testLayer(&outputLayer);
 
+    locateCursor(38, 5);
+    
+    // Calculate and print the program's total execution time
+    time_t endTime = time(NULL);
+    double executionTime = difftime(endTime, startTime);
+    printf("\n    DONE! Total execution time: %.1f sec\n\n",executionTime);
     
     return 0;
 }

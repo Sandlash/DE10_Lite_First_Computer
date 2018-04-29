@@ -160,7 +160,7 @@ int main(int argc, const char * argv[]) {
     FILE *weightsFile;
 
     weightsFile=fopen(MNIST_WEIGHTS_INIT_FILE_NAME, "rb");
-    initLayer(&outputLayer, weightsFile);
+    initLayer(&outputLayer);
     fclose(weightsFile);
     
     //testLayer(&outputLayer);
