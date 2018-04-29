@@ -1,3 +1,8 @@
+#Others
+.snap
+.log
+.index
+
 # Prerequisites
 *.d
 
