@@ -1,7 +1,8 @@
 #Others
-.snap
-.log
-.index
+*.snap
+*.log
+*.index
+Software/.metadata
 
 # Prerequisites
 *.d
