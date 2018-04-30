@@ -27,68 +27,8 @@
 #include <math.h>
 #include <time.h>
 
-#include "../inc/screen.h"
 #include "../inc/mnist-utils.h"
-#include "../inc/mnist-stats.h"
 #include "../inc/1lnn.h"
-
-
-
-/**
- * @details Trains a layer by looping through and training its cells
- * @param l A pointer to the layer that is to be training
- */
-
-void trainLayer(Layer *l){
-    
-    // open MNIST files
-    FILE *imageFile, *labelFile;
-    imageFile = openMNISTImageFile(MNIST_TRAINING_SET_IMAGE_FILE_NAME);
-    labelFile = openMNISTLabelFile(MNIST_TRAINING_SET_LABEL_FILE_NAME);
-    
-    
-    // screen output for monitoring progress
-    displayImageFrame(5,5);
-
-    int errCount = 0;
-    
-    // Loop through all images in the file
-    for (int imgCount=0; imgCount<MNIST_MAX_TRAINING_IMAGES; imgCount++){
-        
-        // display progress
-        displayLoadingProgressTraining(imgCount,3,5);
-        
-        // Reading next image and corresponding label
-        MNIST_Image img = getImage(imageFile);
-        MNIST_Label lbl = getLabel(labelFile);
-        
-        // set target ouput of the number displayed in the current image (=label) to 1, all others to 0
-        Vector targetOutput;
-        targetOutput = getTargetOutput(lbl);
-        
-        displayImage(&img, 6,6);
-     
-        // loop through all output cells for the given image
-        for (int i=0; i < NUMBER_OF_OUTPUT_CELLS; i++){
-            trainCell(&l->cell[i], &img, targetOutput.val[i]);
-        }
-        
-        int predictedNum = getLayerPrediction(l);
-        if (predictedNum!=lbl) errCount++;
-        
-        printf("\n      Prediction: %d   Actual: %d ",predictedNum, lbl);
-
-        displayProgress(imgCount, errCount, 3, 66);
-        
-    }
-    
-    // Close files
-    fclose(imageFile);
-    fclose(labelFile);
-
-}
-
-
 
 
 /**
@@ -97,55 +37,31 @@ void trainLayer(Layer *l){
  * @param l A pointer to the layer that is to be training
  */
 
-void testLayer(Layer *l){
+int testLayer(Layer *l){
     
     // open MNIST files
-    FILE *imageFile, *labelFile;
+    FILE *imageFile;
     imageFile = openMNISTImageFile(MNIST_TESTING_SET_IMAGE_FILE_NAME);
-    labelFile = openMNISTLabelFile(MNIST_TESTING_SET_LABEL_FILE_NAME);
     
-    
-    // screen output for monitoring progress
-    displayImageFrame(7,5);
-    
-    int errCount = 0;
-    
-    // Loop through all images in the file
-    for (int imgCount=0; imgCount<MNIST_MAX_TESTING_IMAGES; imgCount++){
         
-        // display progress
-        displayLoadingProgressTesting(imgCount,5,5);
+	// Reading next image
+	MNIST_Image img = getImage(imageFile);
+
+
+	// loop through all output cells for the given image
+	for (int i=0; i < NUMBER_OF_OUTPUT_CELLS; i++){
+		testCell(&l->cell[i], &img);
+	}
+
+	uint8_t predictedNum = getLayerPrediction(l);
         
-        // Reading next image and corresponding label
-        MNIST_Image img = getImage(imageFile);
-        MNIST_Label lbl = getLabel(labelFile);
-        
-        // set target ouput of the number displayed in the current image (=label) to 1, all others to 0
-        Vector targetOutput;
-        targetOutput = getTargetOutput(lbl);
-        
-        displayImage(&img, 8,6);
-        
-        // loop through all output cells for the given image
-        for (int i=0; i < NUMBER_OF_OUTPUT_CELLS; i++){
-            testCell(&l->cell[i], &img, targetOutput.val[i]);
-        }
-        
-        int predictedNum = getLayerPrediction(l);
-        if (predictedNum!=lbl) errCount++;
-        
-        printf("\n      Prediction: %d   Actual: %d ",predictedNum, lbl);
-        
-        displayProgress(imgCount, errCount, 5, 66);
-        
-    }
     
     // Close files
     fclose(imageFile);
-    fclose(labelFile);
     
-}
+    return predictedNum;
 
+}
 
 
 
@@ -154,7 +70,9 @@ void testLayer(Layer *l){
  * @details Main function to run MNIST-1LNN
  */
 
-int main(int argc, const char * argv[]) {
+int main() {
+	uint8_t img_ready=0;
+	uint8_t result;
 
     Layer outputLayer;
     FILE *weightsFile;
@@ -163,7 +81,11 @@ int main(int argc, const char * argv[]) {
     initLayer(&outputLayer, weightsFile);
     fclose(weightsFile);
     
-    //testLayer(&outputLayer);
+    while(1){
+    	if(img_ready)
+    		 result=testLayer(&outputLayer);
+    }
+
 
     
     return 0;

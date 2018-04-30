@@ -83,7 +83,7 @@ void initLayer(Layer *l, FILE *weightsFile);
  * @param l A pointer to a NN layer
  */
 
-int getLayerPrediction(Layer *l);
+uint8_t getLayerPrediction(Layer *l);
 
 
 
@@ -151,5 +151,5 @@ void trainCell(Cell *c, MNIST_Image *img, int target);
  */
 
 
-void testCell(Cell *c, MNIST_Image *img, int target);
+void testCell(Cell *c, MNIST_Image *img);
 

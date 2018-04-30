@@ -65,10 +65,10 @@ void initLayer(Layer *l, FILE *weightsFile){
  * and using the index (=0-9 number) of the highest value as the prediction.
  */
 
-int getLayerPrediction(Layer *l){
+uint8_t getLayerPrediction(Layer *l){
     
     double maxOut = 0;
-    int maxInd = 0;
+    uint8_t maxInd = 0;
     
     for (int i=0; i<NUMBER_OF_OUTPUT_CELLS; i++){
         
@@ -172,7 +172,7 @@ void trainCell(Cell *c, MNIST_Image *img, int target){
  * Same as training a cell, but without updating weights (learning)
  */
 
-void testCell(Cell *c, MNIST_Image *img, int target){
+void testCell(Cell *c, MNIST_Image *img){
     
     setCellInput(c, img);
     calcCellOutput(c);

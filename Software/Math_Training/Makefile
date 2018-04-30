@@ -144,9 +144,7 @@ ELF := Math_Training.elf
 # Paths to C, C++, and assembly source files.
 C_SRCS += src/1lnn.c
 C_SRCS += src/main.c
-C_SRCS += src/mnist-stats.c
 C_SRCS += src/mnist-utils.c
-C_SRCS += src/screen.c
 CXX_SRCS :=
 ASM_SRCS :=
 
