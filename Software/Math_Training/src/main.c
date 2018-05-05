@@ -75,19 +75,14 @@ int main() {
 	uint8_t result;
 
     Layer outputLayer;
-    FILE *weightsFile;
 
-    weightsFile=fopen(MNIST_WEIGHTS_INIT_FILE_NAME, "rb");
-    initLayer(&outputLayer, weightsFile);
-    fclose(weightsFile);
+    initLayer(&outputLayer);
     
     while(1){
     	if(img_ready)
     		 result=testLayer(&outputLayer);
     }
 
-
-    
     return 0;
 }
 

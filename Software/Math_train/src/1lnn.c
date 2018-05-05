@@ -173,3 +173,25 @@ void testCell(Cell *c, MNIST_Image *img){
     calcCellOutput(c);
     
 }
+
+
+
+/**
+ * @details Tests a layer by looping through and testing its cells
+ * Exactly the same as TrainLayer() but WITHOUT LEARNING.
+ * @param l A pointer to the layer that is to be training
+ */
+
+int testLayer(Layer *l, MNIST_Image *img){
+
+	// loop through all output cells for the given image
+	for (int i=0; i < NUMBER_OF_OUTPUT_CELLS; i++){
+		testCell(&l->cell[i], img);
+	}
+
+	uint8_t predictedNum = getLayerPrediction(l);
+
+    return predictedNum;
+
+}
+
