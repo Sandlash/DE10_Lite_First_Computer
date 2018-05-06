@@ -145,6 +145,7 @@ ELF := Math_Training.elf
 C_SRCS += src/1lnn.c
 C_SRCS += src/main.c
 C_SRCS += src/mnist-utils.c
+C_SRCS += src/weights.c
 CXX_SRCS :=
 ASM_SRCS :=
 

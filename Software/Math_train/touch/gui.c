@@ -190,6 +190,7 @@ void GUI(alt_video_display *pDisplay, TOUCH_HANDLE *pTouch){
     int ColorPen, ButtonId;
     bool UpdatePalette;
     //uint16_t img[SCREEN_WIDTH*SCREEN_WIDTH];
+    //extern uint8_t img_ready
     
     // Schermata iniziale
 	GUI_ShowWelcome(pDisplay);
@@ -237,8 +238,9 @@ void GUI(alt_video_display *pDisplay, TOUCH_HANDLE *pTouch){
 				 * for(int y=0; y<DeskInfo.rcPaint.bottom; y++){
 				 * 		for(int x=0; x<DeskInfo.rcPaint.right; x++){
 				 * 			PtSet(&Pt, x, y);
-				 * 			img[x+y*SCREEN_WIDTH]= vid_get_pixel(x, y, pDisplay)
+				 * 			img[x+y*SCREEN_WIDTH]= vid_get_pixel(x, y, pDisplay);
 				 * 			resize_image(&img, &mnist_img);
+				 * 			img_ready = 1;
 				 * 		}
 				 * 	}*/
 				ButtonId = GUI_CheckButton(&DeskInfo, &Pt);

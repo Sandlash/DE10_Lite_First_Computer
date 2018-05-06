@@ -6,24 +6,40 @@ Progress: Adding HEX3_HEX0 [altera_avalon_pio 16.1]
 Progress: Parameterizing module HEX3_HEX0
 Progress: Adding HEX5_HEX4 [altera_avalon_pio 16.1]
 Progress: Parameterizing module HEX5_HEX4
+Progress: Adding LCD_reset_n [altera_avalon_pio 16.1]
+Progress: Parameterizing module LCD_reset_n
 Progress: Adding LEDs [altera_avalon_pio 16.1]
 Progress: Parameterizing module LEDs
+Progress: Adding LT24_Controller_0 [LT24_Controller 1.0]
+Progress: Parameterizing module LT24_Controller_0
 Progress: Adding clk_0 [clock_source 16.1]
 Progress: Parameterizing module clk_0
 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 16.1]
 Progress: Parameterizing module jtag_uart_0
+Progress: Adding mm_clock_crossing_bridge_0 [altera_avalon_mm_clock_crossing_bridge 16.1]
+Progress: Parameterizing module mm_clock_crossing_bridge_0
 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.1]
 Progress: Parameterizing module onchip_memory2_0
 Progress: Adding proc [altera_nios2_gen2 16.1]
 Progress: Parameterizing module proc
 Progress: Adding push_button [altera_avalon_pio 16.1]
 Progress: Parameterizing module push_button
+Progress: Adding sdram [altera_avalon_new_sdram_controller 16.1]
+Progress: Parameterizing module sdram
 Progress: Adding sliders [altera_avalon_pio 16.1]
 Progress: Parameterizing module sliders
 Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 16.1]
 Progress: Parameterizing module sysid_qsys_0
+Progress: Adding system_pll [altpll 16.1]
+Progress: Parameterizing module system_pll
 Progress: Adding timer_0 [altera_avalon_timer 16.1]
 Progress: Parameterizing module timer_0
+Progress: Adding touch_panel_busy [altera_avalon_pio 16.1]
+Progress: Parameterizing module touch_panel_busy
+Progress: Adding touch_panel_pen_irq_n [altera_avalon_pio 16.1]
+Progress: Parameterizing module touch_panel_pen_irq_n
+Progress: Adding touch_panel_spi [altera_avalon_spi 16.1]
+Progress: Parameterizing module touch_panel_spi
 Progress: Adding watchdog [altera_avalon_timer 16.1]
 Progress: Parameterizing module watchdog
 Progress: Building connections
@@ -32,11 +48,12 @@ Progress: Validating
 Progress: Done reading input file
 Info: NiosII_esercitazione.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Info: NiosII_esercitazione.push_button: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: NiosII_esercitazione.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
 Info: NiosII_esercitazione.sliders: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: NiosII_esercitazione.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
 Info: NiosII_esercitazione.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
-Warning: NiosII_esercitazione.watchdog.resetrequest: No synchronous edges, but has associated clock
-Warning: NiosII_esercitazione.watchdog: Interrupt sender watchdog.irq is not connected to an interrupt receiver
+Info: NiosII_esercitazione.touch_panel_busy: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: NiosII_esercitazione.touch_panel_pen_irq_n: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
@@ -48,24 +65,40 @@ Progress: Adding HEX3_HEX0 [altera_avalon_pio 16.1]
 Progress: Parameterizing module HEX3_HEX0
 Progress: Adding HEX5_HEX4 [altera_avalon_pio 16.1]
 Progress: Parameterizing module HEX5_HEX4
+Progress: Adding LCD_reset_n [altera_avalon_pio 16.1]
+Progress: Parameterizing module LCD_reset_n
 Progress: Adding LEDs [altera_avalon_pio 16.1]
 Progress: Parameterizing module LEDs
+Progress: Adding LT24_Controller_0 [LT24_Controller 1.0]
+Progress: Parameterizing module LT24_Controller_0
 Progress: Adding clk_0 [clock_source 16.1]
 Progress: Parameterizing module clk_0
 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 16.1]
 Progress: Parameterizing module jtag_uart_0
+Progress: Adding mm_clock_crossing_bridge_0 [altera_avalon_mm_clock_crossing_bridge 16.1]
+Progress: Parameterizing module mm_clock_crossing_bridge_0
 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.1]
 Progress: Parameterizing module onchip_memory2_0
 Progress: Adding proc [altera_nios2_gen2 16.1]
 Progress: Parameterizing module proc
 Progress: Adding push_button [altera_avalon_pio 16.1]
 Progress: Parameterizing module push_button
+Progress: Adding sdram [altera_avalon_new_sdram_controller 16.1]
+Progress: Parameterizing module sdram
 Progress: Adding sliders [altera_avalon_pio 16.1]
 Progress: Parameterizing module sliders
 Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 16.1]
 Progress: Parameterizing module sysid_qsys_0
+Progress: Adding system_pll [altpll 16.1]
+Progress: Parameterizing module system_pll
 Progress: Adding timer_0 [altera_avalon_timer 16.1]
 Progress: Parameterizing module timer_0
+Progress: Adding touch_panel_busy [altera_avalon_pio 16.1]
+Progress: Parameterizing module touch_panel_busy
+Progress: Adding touch_panel_pen_irq_n [altera_avalon_pio 16.1]
+Progress: Parameterizing module touch_panel_pen_irq_n
+Progress: Adding touch_panel_spi [altera_avalon_spi 16.1]
+Progress: Parameterizing module touch_panel_spi
 Progress: Adding watchdog [altera_avalon_timer 16.1]
 Progress: Parameterizing module watchdog
 Progress: Building connections
@@ -74,50 +107,64 @@ Progress: Validating
 Progress: Done reading input file
 Info: NiosII_esercitazione.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Info: NiosII_esercitazione.push_button: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: NiosII_esercitazione.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
 Info: NiosII_esercitazione.sliders: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: NiosII_esercitazione.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
 Info: NiosII_esercitazione.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
-Warning: NiosII_esercitazione.watchdog.resetrequest: No synchronous edges, but has associated clock
-Warning: NiosII_esercitazione.watchdog: Interrupt sender watchdog.irq is not connected to an interrupt receiver
+Info: NiosII_esercitazione.touch_panel_busy: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: NiosII_esercitazione.touch_panel_pen_irq_n: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: NiosII_esercitazione: Generating NiosII_esercitazione "NiosII_esercitazione" for QUARTUS_SYNTH
-Info: HEX3_HEX0: Starting RTL generation for module 'NiosII_esercitazione_HEX3_HEX0'
-Info: HEX3_HEX0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NiosII_esercitazione_HEX3_HEX0 --dir=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0063_HEX3_HEX0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0063_HEX3_HEX0_gen//NiosII_esercitazione_HEX3_HEX0_component_configuration.pl  --do_build_sim=0  ]
-Info: HEX3_HEX0: Done RTL generation for module 'NiosII_esercitazione_HEX3_HEX0'
-Info: HEX3_HEX0: "NiosII_esercitazione" instantiated altera_avalon_pio "HEX3_HEX0"
-Info: HEX5_HEX4: Starting RTL generation for module 'NiosII_esercitazione_HEX5_HEX4'
-Info: HEX5_HEX4:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NiosII_esercitazione_HEX5_HEX4 --dir=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0064_HEX5_HEX4_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0064_HEX5_HEX4_gen//NiosII_esercitazione_HEX5_HEX4_component_configuration.pl  --do_build_sim=0  ]
-Info: HEX5_HEX4: Done RTL generation for module 'NiosII_esercitazione_HEX5_HEX4'
-Info: HEX5_HEX4: "NiosII_esercitazione" instantiated altera_avalon_pio "HEX5_HEX4"
+Info: Inserting clock-crossing logic between cmd_demux.src1 and cmd_mux_001.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src3 and cmd_mux_003.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src5 and cmd_mux_005.sink0
+Info: Inserting clock-crossing logic between rsp_demux_001.src0 and rsp_mux.sink1
+Info: Inserting clock-crossing logic between rsp_demux_003.src0 and rsp_mux.sink3
+Info: Inserting clock-crossing logic between rsp_demux_005.src0 and rsp_mux.sink5
+Info: LCD_reset_n: Starting RTL generation for module 'NiosII_esercitazione_LCD_reset_n'
+Info: LCD_reset_n:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NiosII_esercitazione_LCD_reset_n --dir=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0055_LCD_reset_n_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0055_LCD_reset_n_gen//NiosII_esercitazione_LCD_reset_n_component_configuration.pl  --do_build_sim=0  ]
+Info: LCD_reset_n: Done RTL generation for module 'NiosII_esercitazione_LCD_reset_n'
+Info: LCD_reset_n: "NiosII_esercitazione" instantiated altera_avalon_pio "LCD_reset_n"
 Info: LEDs: Starting RTL generation for module 'NiosII_esercitazione_LEDs'
-Info: LEDs:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NiosII_esercitazione_LEDs --dir=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0065_LEDs_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0065_LEDs_gen//NiosII_esercitazione_LEDs_component_configuration.pl  --do_build_sim=0  ]
+Info: LEDs:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NiosII_esercitazione_LEDs --dir=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0056_LEDs_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0056_LEDs_gen//NiosII_esercitazione_LEDs_component_configuration.pl  --do_build_sim=0  ]
 Info: LEDs: Done RTL generation for module 'NiosII_esercitazione_LEDs'
 Info: LEDs: "NiosII_esercitazione" instantiated altera_avalon_pio "LEDs"
+Info: LT24_Controller_0: "NiosII_esercitazione" instantiated LT24_Controller "LT24_Controller_0"
 Info: jtag_uart_0: Starting RTL generation for module 'NiosII_esercitazione_jtag_uart_0'
-Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=NiosII_esercitazione_jtag_uart_0 --dir=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0066_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0066_jtag_uart_0_gen//NiosII_esercitazione_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=NiosII_esercitazione_jtag_uart_0 --dir=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0058_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0058_jtag_uart_0_gen//NiosII_esercitazione_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
 Info: jtag_uart_0: Done RTL generation for module 'NiosII_esercitazione_jtag_uart_0'
 Info: jtag_uart_0: "NiosII_esercitazione" instantiated altera_avalon_jtag_uart "jtag_uart_0"
-Info: onchip_memory2_0: Starting RTL generation for module 'NiosII_esercitazione_onchip_memory2_0'
-Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=NiosII_esercitazione_onchip_memory2_0 --dir=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0067_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0067_onchip_memory2_0_gen//NiosII_esercitazione_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
-Info: onchip_memory2_0: Done RTL generation for module 'NiosII_esercitazione_onchip_memory2_0'
-Info: onchip_memory2_0: "NiosII_esercitazione" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: mm_clock_crossing_bridge_0: "NiosII_esercitazione" instantiated altera_avalon_mm_clock_crossing_bridge "mm_clock_crossing_bridge_0"
 Info: proc: "NiosII_esercitazione" instantiated altera_nios2_gen2 "proc"
 Info: push_button: Starting RTL generation for module 'NiosII_esercitazione_push_button'
-Info: push_button:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NiosII_esercitazione_push_button --dir=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0068_push_button_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0068_push_button_gen//NiosII_esercitazione_push_button_component_configuration.pl  --do_build_sim=0  ]
+Info: push_button:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NiosII_esercitazione_push_button --dir=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0060_push_button_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0060_push_button_gen//NiosII_esercitazione_push_button_component_configuration.pl  --do_build_sim=0  ]
 Info: push_button: Done RTL generation for module 'NiosII_esercitazione_push_button'
 Info: push_button: "NiosII_esercitazione" instantiated altera_avalon_pio "push_button"
+Info: sdram: Starting RTL generation for module 'NiosII_esercitazione_sdram'
+Info: sdram:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=NiosII_esercitazione_sdram --dir=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0061_sdram_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0061_sdram_gen//NiosII_esercitazione_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram: Done RTL generation for module 'NiosII_esercitazione_sdram'
+Info: sdram: "NiosII_esercitazione" instantiated altera_avalon_new_sdram_controller "sdram"
 Info: sliders: Starting RTL generation for module 'NiosII_esercitazione_sliders'
-Info: sliders:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NiosII_esercitazione_sliders --dir=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0069_sliders_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0069_sliders_gen//NiosII_esercitazione_sliders_component_configuration.pl  --do_build_sim=0  ]
+Info: sliders:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NiosII_esercitazione_sliders --dir=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0062_sliders_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0062_sliders_gen//NiosII_esercitazione_sliders_component_configuration.pl  --do_build_sim=0  ]
 Info: sliders: Done RTL generation for module 'NiosII_esercitazione_sliders'
 Info: sliders: "NiosII_esercitazione" instantiated altera_avalon_pio "sliders"
 Info: sysid_qsys_0: "NiosII_esercitazione" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: system_pll: "NiosII_esercitazione" instantiated altpll "system_pll"
 Info: timer_0: Starting RTL generation for module 'NiosII_esercitazione_timer_0'
-Info: timer_0:   Generation command is [exec C:/intelFPGA_lite/16.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/16.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=NiosII_esercitazione_timer_0 --dir=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0071_timer_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0071_timer_0_gen//NiosII_esercitazione_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_0:   Generation command is [exec C:/intelFPGA_lite/16.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/16.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=NiosII_esercitazione_timer_0 --dir=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0066_timer_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0066_timer_0_gen//NiosII_esercitazione_timer_0_component_configuration.pl  --do_build_sim=0  ]
 Info: timer_0: Done RTL generation for module 'NiosII_esercitazione_timer_0'
 Info: timer_0: "NiosII_esercitazione" instantiated altera_avalon_timer "timer_0"
-Info: watchdog: Starting RTL generation for module 'NiosII_esercitazione_watchdog'
-Info: watchdog:   Generation command is [exec C:/intelFPGA_lite/16.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/16.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=NiosII_esercitazione_watchdog --dir=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0072_watchdog_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0072_watchdog_gen//NiosII_esercitazione_watchdog_component_configuration.pl  --do_build_sim=0  ]
-Info: watchdog: Done RTL generation for module 'NiosII_esercitazione_watchdog'
-Info: watchdog: "NiosII_esercitazione" instantiated altera_avalon_timer "watchdog"
+Info: touch_panel_busy: Starting RTL generation for module 'NiosII_esercitazione_touch_panel_busy'
+Info: touch_panel_busy:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NiosII_esercitazione_touch_panel_busy --dir=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0067_touch_panel_busy_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0067_touch_panel_busy_gen//NiosII_esercitazione_touch_panel_busy_component_configuration.pl  --do_build_sim=0  ]
+Info: touch_panel_busy: Done RTL generation for module 'NiosII_esercitazione_touch_panel_busy'
+Info: touch_panel_busy: "NiosII_esercitazione" instantiated altera_avalon_pio "touch_panel_busy"
+Info: touch_panel_pen_irq_n: Starting RTL generation for module 'NiosII_esercitazione_touch_panel_pen_irq_n'
+Info: touch_panel_pen_irq_n:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NiosII_esercitazione_touch_panel_pen_irq_n --dir=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0068_touch_panel_pen_irq_n_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0068_touch_panel_pen_irq_n_gen//NiosII_esercitazione_touch_panel_pen_irq_n_component_configuration.pl  --do_build_sim=0  ]
+Info: touch_panel_pen_irq_n: Done RTL generation for module 'NiosII_esercitazione_touch_panel_pen_irq_n'
+Info: touch_panel_pen_irq_n: "NiosII_esercitazione" instantiated altera_avalon_pio "touch_panel_pen_irq_n"
+Info: touch_panel_spi: Starting RTL generation for module 'NiosII_esercitazione_touch_panel_spi'
+Info: touch_panel_spi:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=NiosII_esercitazione_touch_panel_spi --dir=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0069_touch_panel_spi_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0069_touch_panel_spi_gen//NiosII_esercitazione_touch_panel_spi_component_configuration.pl  --do_build_sim=0  ]
+Info: touch_panel_spi: Done RTL generation for module 'NiosII_esercitazione_touch_panel_spi'
+Info: touch_panel_spi: "NiosII_esercitazione" instantiated altera_avalon_spi "touch_panel_spi"
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
@@ -130,23 +177,39 @@ Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_014: Inserting error_adapter: error_adapter_0
 Info: mm_interconnect_0: "NiosII_esercitazione" instantiated altera_mm_interconnect "mm_interconnect_0"
 Info: irq_mapper: "NiosII_esercitazione" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_synchronizer: "NiosII_esercitazione" instantiated altera_irq_clock_crosser "irq_synchronizer"
 Info: rst_controller: "NiosII_esercitazione" instantiated altera_reset_controller "rst_controller"
 Info: cpu: Starting RTL generation for module 'NiosII_esercitazione_proc_cpu'
-Info: cpu:   Generation command is [exec C:/intelFPGA_lite/16.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/16.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=NiosII_esercitazione_proc_cpu --dir=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0075_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/16.1/quartus/bin64/ --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7649_5983162959661402538.dir/0075_cpu_gen//NiosII_esercitazione_proc_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2018.04.28 13:08:36 (*) Starting Nios II generation
-Info: cpu: # 2018.04.28 13:08:36 (*)   Checking for plaintext license.
-Info: cpu: # 2018.04.28 13:08:37 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/16.1/quartus/bin64/
-Info: cpu: # 2018.04.28 13:08:37 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info: cpu: # 2018.04.28 13:08:37 (*)   LM_LICENSE_FILE environment variable is empty
-Info: cpu: # 2018.04.28 13:08:37 (*)   Plaintext license not found.
-Info: cpu: # 2018.04.28 13:08:37 (*)   No license required to generate encrypted Nios II/e.
-Info: cpu: # 2018.04.28 13:08:37 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2018.04.28 13:08:37 (*)   Creating all objects for CPU
-Info: cpu: # 2018.04.28 13:08:39 (*)   Generating RTL from CPU objects
-Info: cpu: # 2018.04.28 13:08:39 (*)   Creating plain-text RTL
-Info: cpu: # 2018.04.28 13:08:40 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/16.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/16.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=NiosII_esercitazione_proc_cpu --dir=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0073_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/16.1/quartus/bin64/ --verilog --config=C:/Users/emilio/AppData/Local/Temp/alt7653_7573596104204844414.dir/0073_cpu_gen//NiosII_esercitazione_proc_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2018.05.02 18:30:19 (*) Starting Nios II generation
+Info: cpu: # 2018.05.02 18:30:19 (*)   Checking for plaintext license.
+Info: cpu: # 2018.05.02 18:30:19 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/16.1/quartus/bin64/
+Info: cpu: # 2018.05.02 18:30:19 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2018.05.02 18:30:19 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2018.05.02 18:30:19 (*)   Plaintext license not found.
+Info: cpu: # 2018.05.02 18:30:19 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2018.05.02 18:30:20 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/16.1/quartus/bin64/
+Info: cpu: # 2018.05.02 18:30:20 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2018.05.02 18:30:20 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2018.05.02 18:30:20 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: cpu: # 2018.05.02 18:30:20 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2018.05.02 18:30:20 (*)   Creating all objects for CPU
+Info: cpu: # 2018.05.02 18:30:20 (*)     Testbench
+Info: cpu: # 2018.05.02 18:30:20 (*)     Instruction decoding
+Info: cpu: # 2018.05.02 18:30:20 (*)       Instruction fields
+Info: cpu: # 2018.05.02 18:30:20 (*)       Instruction decodes
+Info: cpu: # 2018.05.02 18:30:21 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2018.05.02 18:30:21 (*)       Instruction controls
+Info: cpu: # 2018.05.02 18:30:21 (*)     Pipeline frontend
+Info: cpu: # 2018.05.02 18:30:21 (*)     Pipeline backend
+Info: cpu: # 2018.05.02 18:30:24 (*)   Generating RTL from CPU objects
+Info: cpu: # 2018.05.02 18:30:26 (*)   Creating encrypted RTL
+Info: cpu: # 2018.05.02 18:30:27 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'NiosII_esercitazione_proc_cpu'
 Info: cpu: "proc" instantiated altera_nios2_gen2_unit "cpu"
 Info: proc_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "proc_data_master_translator"
@@ -157,20 +220,42 @@ Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instanti
 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
-Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
-Info: router_013: "mm_interconnect_0" instantiated altera_merlin_router "router_013"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: router_008: "mm_interconnect_0" instantiated altera_merlin_router "router_008"
+Info: router_009: "mm_interconnect_0" instantiated altera_merlin_router "router_009"
+Info: router_010: "mm_interconnect_0" instantiated altera_merlin_router "router_010"
+Info: proc_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "proc_data_master_limiter"
+Info: Reusing file C:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Hardware/NiosII_esercitazione/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: sdram_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "sdram_s1_burst_adapter"
+Info: Reusing file C:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Hardware/NiosII_esercitazione/synthesis/submodules/altera_avalon_st_pipeline_base.v
 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
 Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
 Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
 Info: Reusing file C:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Hardware/NiosII_esercitazione/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: rsp_demux_005: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_005"
+Info: rsp_demux_007: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_007"
 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
 Info: Reusing file C:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Hardware/NiosII_esercitazione/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
 Info: Reusing file C:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Hardware/NiosII_esercitazione/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file C:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Hardware/NiosII_esercitazione/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: sdram_s1_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "sdram_s1_rsp_width_adapter"
+Info: Reusing file C:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Hardware/NiosII_esercitazione/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Hardware/NiosII_esercitazione/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file C:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Hardware/NiosII_esercitazione/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: Reusing file C:/Users/emilio/UNI/Magistrale/Embedded/progetto/DE10_Lite_First_Computer/Hardware/NiosII_esercitazione/synthesis/submodules/altera_std_synchronizer_nocut.v
 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_006: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_006"
 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
-Info: NiosII_esercitazione: Done "NiosII_esercitazione" with 35 modules, 48 files
+Info: error_adapter_0: "avalon_st_adapter_006" instantiated error_adapter "error_adapter_0"
+Info: NiosII_esercitazione: Done "NiosII_esercitazione" with 55 modules, 88 files
 Info: qsys-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

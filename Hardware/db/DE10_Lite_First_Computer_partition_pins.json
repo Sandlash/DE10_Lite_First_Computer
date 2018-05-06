@@ -4,99 +4,87 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "HEX0[0]",
+					"name" : "DRAM_ADDR[0]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[1]",
+					"name" : "DRAM_ADDR[1]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[2]",
+					"name" : "DRAM_ADDR[2]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[3]",
+					"name" : "DRAM_ADDR[3]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[4]",
+					"name" : "DRAM_ADDR[4]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[5]",
+					"name" : "DRAM_ADDR[5]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[6]",
+					"name" : "DRAM_ADDR[6]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[7]",
+					"name" : "DRAM_ADDR[7]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX4[0]",
+					"name" : "DRAM_ADDR[8]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX4[1]",
+					"name" : "DRAM_ADDR[9]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX4[2]",
+					"name" : "DRAM_ADDR[10]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX4[3]",
+					"name" : "DRAM_ADDR[11]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX4[4]",
+					"name" : "DRAM_ADDR[12]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX4[5]",
+					"name" : "DRAM_BA[0]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX4[6]",
+					"name" : "DRAM_BA[1]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX4[7]",
+					"name" : "DRAM_CAS_N",
 					"strict" : false
 				},
 				{
-					"name" : "HEX5[0]",
+					"name" : "DRAM_CS_N",
 					"strict" : false
 				},
 				{
-					"name" : "HEX5[1]",
+					"name" : "DRAM_LDQM",
 					"strict" : false
 				},
 				{
-					"name" : "HEX5[2]",
+					"name" : "DRAM_RAS_N",
 					"strict" : false
 				},
 				{
-					"name" : "HEX5[3]",
+					"name" : "DRAM_UDQM",
 					"strict" : false
 				},
 				{
-					"name" : "HEX5[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5[6]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5[7]",
+					"name" : "DRAM_WE_N",
 					"strict" : false
 				},
 				{
@@ -140,11 +128,163 @@
 					"strict" : false
 				},
 				{
-					"name" : "MAX10_CLK1_50",
+					"name" : "LT24_ADC_CS_N",
 					"strict" : false
 				},
 				{
-					"name" : "SW[0]",
+					"name" : "LT24_ADC_DCLK",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_ADC_DIN",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_CS_N",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_D[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_D[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_D[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_D[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_D[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_D[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_D[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_D[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_D[8]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_D[9]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_D[10]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_D[11]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_D[12]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_D[13]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_D[14]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_D[15]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_RESET_N",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_RS",
+					"strict" : false
+				},
+				{
+					"name" : "LT24_WR_N",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM_DQ[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM_DQ[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM_DQ[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM_DQ[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM_DQ[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM_DQ[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM_DQ[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM_DQ[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM_DQ[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM_DQ[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM_DQ[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM_DQ[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM_DQ[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM_DQ[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM_DQ[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM_DQ[15]",
+					"strict" : false
+				},
+				{
+					"name" : "MAX10_CLK1_50",
 					"strict" : false
 				},
 				{
@@ -152,31 +292,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[1]",
+					"name" : "LT24_ADC_DOUT",
 					"strict" : false
 				},
 				{
-					"name" : "SW[2]",
+					"name" : "LT24_ADC_PENIRQ_N",
 					"strict" : false
 				},
 				{
-					"name" : "SW[3]",
+					"name" : "LT24_ADC_BUSY",
 					"strict" : false
 				},
 				{
-					"name" : "SW[4]",
+					"name" : "KEY[0]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[5]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[6]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[7]",
+					"name" : "SW[0]",
 					"strict" : false
 				},
 				{
@@ -184,11 +316,35 @@
 					"strict" : false
 				},
 				{
+					"name" : "SW[1]",
+					"strict" : false
+				},
+				{
 					"name" : "SW[9]",
 					"strict" : false
 				},
 				{
-					"name" : "KEY[0]",
+					"name" : "SW[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[2]",
 					"strict" : false
 				},
 				{

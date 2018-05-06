@@ -2,7 +2,8 @@
 *.snap
 *.log
 *.index
-Software/.metadata
+Software\.metadata
+Hardware
 
 # Prerequisites
 *.d
